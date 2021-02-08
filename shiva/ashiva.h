@@ -20,7 +20,7 @@ public:
     std::string tgaFullFilePath;
     
     void pickColor(const uint8_t *color);
-    void drawLine(const uint32_t x0, const uint32_t y0, const uint32_t x1, const uint32_t y1);
+    void drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1);
     void swapBuffers();
     
 private:

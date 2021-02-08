@@ -5,8 +5,8 @@
 //  Created by Mihail Terekhov on 08.02.2021.
 //
 
-#include <algorithm>
-#include <utility>
+#include <string_view>
+#include <cmath>
 
 #include "ashiva.h"
 #include "atgaexporter.h"
@@ -39,38 +39,42 @@ void AShiva::pickColor(const uint8_t *color) {
     memcpy(drawColor, color, colorsPerPixel);
 }
 
-void AShiva::drawLine(const uint32_t x0, const uint32_t y0, const uint32_t x1, const uint32_t y1) {
+void AShiva::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
     if (x0 > frameWidth ||
         y0 > frameHeight) {
         return;
     }
     
     bool steep = false;
-    if (std::abs(x0 - x1) < std::abs(y0 - y1)) { // if the line is steep, we transpose the image
+    if (std::abs(x0 - x1) < std::abs(y0 - y1)) {
         std::swap(x0, y0);
         std::swap(x1, y1);
         steep = true;
     }
     
-    if (x0 > x1) { // make it left-to-right
+    if (x0 > x1) {
         std::swap(x0, x1);
         std::swap(y0, y1);
     }
     
-    for (uint32_t x = x0; x <= x1; x++) {
-        float t = (x - x0) / static_cast<float>(x1 - x0);
-        uint32_t y = y0 * (1. - t) + y1 * t;
+    int32_t dx = x1 - x0;
+    int32_t dy = y1 - y0;
+    int32_t derror2 = std::abs(dy) * 2;
+    int32_t error2 = 0;
+    int32_t y = y0;
+    for (int32_t x = x0; x <= x1; x++) {
         if (steep) {
             paintPixel(drawColor, y, x);
         } else {
             paintPixel(drawColor, x, y);
         }
+        error2 += derror2;
+        
+        if (error2 > dx) {
+            y += (y1 > y0 ? 1 : -1);
+            error2 -= dx * 2;
+        }
     }
-    
-//    for (uint32_t x = x0; x <= x1; x++) {
-//        uint32_t y = y0 * (1. - t) + y1 * t;
-//        paintPixel(drawColor, x, y);
-//    }
 }
 
 void AShiva::paintPixel(const uint8_t *color, const uint32_t pixelXCoord, const uint32_t pixelYCoord) {
