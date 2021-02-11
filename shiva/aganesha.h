@@ -1,5 +1,5 @@
-#ifndef SPCSHIVA_ASHIVA_H
-#define SPCSHIVA_ASHIVA_H
+#ifndef SPCGANESHA_AGANESHA_H
+#define SPCGANESHA_AGANESHA_H
 
 //=============================================================================
 
@@ -7,15 +7,15 @@
 
 //=============================================================================
 
-namespace spcShiva
+namespace spcGanesha
 {
 
 //=============================================================================
 
-class AShiva {
+class AGanesha {
 public:
-    AShiva(const uint32_t frameBufferWidth, const uint32_t frameBufferHeight, const uint8_t frameBufferColorsPerPixel);
-    ~AShiva();
+    AGanesha(const uint32_t frameBufferWidth, const uint32_t frameBufferHeight, const uint8_t frameBufferColorsPerPixel);
+    ~AGanesha();
     
     std::string tgaFullFilePath;
     
@@ -39,6 +39,6 @@ private:
 
 //=============================================================================
 
-};  //  namespace spcShiva
+};  //  namespace spcGanesha
 
-#endif  //  SPCSHIVA_ASHIVA_H
+#endif  //  SPCGANESHA_AGANESHA_H

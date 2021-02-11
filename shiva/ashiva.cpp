@@ -1,23 +1,16 @@
-//
-//  AShiva.cpp
-//  shiva
-//
-//  Created by Mihail Terekhov on 08.02.2021.
-//
-
 #include <string_view>
 #include <cmath>
 
-#include "ashiva.h"
+#include "aganesha.h"
 #include "atgaexporter.h"
 
-namespace spcShiva {
+namespace spcGanesha {
 
-uint32_t AShiva::bufferSize() const {
+uint32_t AGanesha::bufferSize() const {
     return colorsPerPixel * frameWidth * frameHeight;
 }
 
-AShiva::AShiva(const uint32_t frameBufferWidth, const uint32_t frameBufferHeight, const uint8_t frameBufferColorsPerPixel) : frameWidth(frameBufferWidth), frameHeight(frameBufferHeight), colorsPerPixel(frameBufferColorsPerPixel) {
+AGanesha::AGanesha(const uint32_t frameBufferWidth, const uint32_t frameBufferHeight, const uint8_t frameBufferColorsPerPixel) : frameWidth(frameBufferWidth), frameHeight(frameBufferHeight), colorsPerPixel(frameBufferColorsPerPixel) {
     uint32_t frameSizeInBytes = bufferSize();
     onScreenFrameBufferData = new uint8_t[frameSizeInBytes];
     memset(onScreenFrameBufferData, 0, frameSizeInBytes);
@@ -29,17 +22,17 @@ AShiva::AShiva(const uint32_t frameBufferWidth, const uint32_t frameBufferHeight
     memset(drawColor, 0xFF, colorsPerPixel);
 }
 
-AShiva::~AShiva() {
+AGanesha::~AGanesha() {
     delete [] onScreenFrameBufferData;
     delete [] backFrameBufferData;
     delete [] drawColor;
 }
 
-void AShiva::pickColor(const uint8_t *color) {
+void AGanesha::pickColor(const uint8_t *color) {
     memcpy(drawColor, color, colorsPerPixel);
 }
 
-void AShiva::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
+void AGanesha::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
     if (x0 > frameWidth ||
         y0 > frameHeight) {
         return;
@@ -77,14 +70,14 @@ void AShiva::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
     }
 }
 
-void AShiva::paintPixel(const uint8_t *color, const uint32_t pixelXCoord, const uint32_t pixelYCoord) {
+void AGanesha::paintPixel(const uint8_t *color, const uint32_t pixelXCoord, const uint32_t pixelYCoord) {
     uint32_t pixelIndex = colorsPerPixel * (pixelYCoord * frameWidth + pixelXCoord);
     for (uint32_t i = 0; i < colorsPerPixel; i++) {
         backFrameBufferData[pixelIndex + i] = color[i];
     }
 }
 
-void AShiva::swapBuffers() {
+void AGanesha::swapBuffers() {
     memcpy(onScreenFrameBufferData, backFrameBufferData, bufferSize());
     
     ATGAExporter tgaSaver;

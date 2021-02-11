@@ -2,7 +2,7 @@
 
 //=============================================================================
 
-namespace spcShiva
+namespace spcGanesha
 {
 
 //=============================================================================
@@ -98,4 +98,4 @@ bool ATGAExporter::flipOver(unsigned char* data, int width, int height)
 
 //=============================================================================
 
-};  //  namespace spcShiva
+};  //  namespace spcGanesha

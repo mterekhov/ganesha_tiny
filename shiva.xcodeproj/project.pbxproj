@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3A7BCA425D176E900D4AD80 /* aobj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3A7BCA225D176E900D4AD80 /* aobj.cpp */; };
 		E3E1E12325D1421700672F14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E12225D1421700672F14 /* main.cpp */; };
 		E3E1E12C25D1426300672F14 /* atgaexporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E12A25D1426300672F14 /* atgaexporter.cpp */; };
 		E3E1E13025D142BB00672F14 /* ashiva.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E12E25D142BB00672F14 /* ashiva.cpp */; };
@@ -25,13 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E3A7BC9F25D15C2300D4AD80 /* shivatypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shivatypes.h; sourceTree = "<group>"; };
+		E3A7BC9F25D15C2300D4AD80 /* ganeshatypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ganeshatypes.h; sourceTree = "<group>"; };
+		E3A7BCA225D176E900D4AD80 /* aobj.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = aobj.cpp; sourceTree = "<group>"; };
+		E3A7BCA325D176E900D4AD80 /* aobj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aobj.h; sourceTree = "<group>"; };
 		E3E1E11F25D1421700672F14 /* shiva */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shiva; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E1E12225D1421700672F14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E3E1E12A25D1426300672F14 /* atgaexporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = atgaexporter.cpp; sourceTree = "<group>"; };
 		E3E1E12B25D1426300672F14 /* atgaexporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atgaexporter.h; sourceTree = "<group>"; };
 		E3E1E12E25D142BB00672F14 /* ashiva.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ashiva.cpp; sourceTree = "<group>"; };
-		E3E1E12F25D142BB00672F14 /* ashiva.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ashiva.h; sourceTree = "<group>"; };
+		E3E1E12F25D142BB00672F14 /* aganesha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aganesha.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +67,12 @@
 		E3E1E12125D1421700672F14 /* shiva */ = {
 			isa = PBXGroup;
 			children = (
-				E3A7BC9F25D15C2300D4AD80 /* shivatypes.h */,
-				E3E1E12F25D142BB00672F14 /* ashiva.h */,
+				E3A7BC9F25D15C2300D4AD80 /* ganeshatypes.h */,
+				E3E1E12F25D142BB00672F14 /* aganesha.h */,
 				E3E1E12E25D142BB00672F14 /* ashiva.cpp */,
 				E3E1E12B25D1426300672F14 /* atgaexporter.h */,
+				E3A7BCA325D176E900D4AD80 /* aobj.h */,
+				E3A7BCA225D176E900D4AD80 /* aobj.cpp */,
 				E3E1E12A25D1426300672F14 /* atgaexporter.cpp */,
 				E3E1E12225D1421700672F14 /* main.cpp */,
 			);
@@ -131,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E1E12325D1421700672F14 /* main.cpp in Sources */,
+				E3A7BCA425D176E900D4AD80 /* aobj.cpp in Sources */,
 				E3E1E12C25D1426300672F14 /* atgaexporter.cpp in Sources */,
 				E3E1E13025D142BB00672F14 /* ashiva.cpp in Sources */,
 			);

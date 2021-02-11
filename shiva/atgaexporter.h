@@ -1,5 +1,5 @@
-#ifndef SPCSHIVA_ATGAEXPORTER_H
-#define SPCSHIVA_ATGAEXPORTER_H
+#ifndef SPCGANESHA_ATGAEXPORTER_H
+#define SPCGANESHA_ATGAEXPORTER_H
 
 //=============================================================================
 
@@ -7,7 +7,7 @@
 
 //=============================================================================
 
-namespace spcShiva
+namespace spcGanesha
 {
 
 //=============================================================================
@@ -54,8 +54,8 @@ private:
 
 //=============================================================================
 
-};  //  namespace spcShiva
+};  //  namespace spcGanesha
 
 //=============================================================================
 
-#endif  //  SPCSHIVA_ATGAEXPORTER_H
+#endif  //  SPCGANESHA_ATGAEXPORTER_H

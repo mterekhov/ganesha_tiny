@@ -1,20 +1,24 @@
-#ifndef SPCSHIVA_SHIVATYPES_H
-#define SPCSHIVA_SHIVATYPES_H
+#ifndef SPCGANESHA_GANESHATYPES_H
+#define SPCGANESHA_GANESHATYPES_H
 
 //=============================================================================
 
 #include <string>
+#include <vector>
 
 //=============================================================================
 
-namespace spcShiva
+namespace spcGanesha
 {
 
 //=============================================================================
 
+typedef std::vector<float> TVector;
+typedef std::vector<int32_t> TFace;
+typedef std::vector<TFace> TVertexesIndexesList;
 
 //=============================================================================
 
-};  //  namespace spcShiva
+};  //  namespace spcGanesha
 
-#endif  //  SPCSHIVA_ASHIVA_H
+#endif  //  SPCGANESHA_AGANESHA_H
