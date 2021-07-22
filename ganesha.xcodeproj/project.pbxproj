@@ -52,6 +52,7 @@
 		E370AC0226A98B2100E4F159 = {
 			isa = PBXGroup;
 			children = (
+				E370AC0E26A98B2100E4F159 /* main.cpp */,
 				E370AC0D26A98B2100E4F159 /* ganesha */,
 				E370AC0C26A98B2100E4F159 /* Products */,
 			);
@@ -68,15 +69,14 @@
 		E370AC0D26A98B2100E4F159 /* ganesha */ = {
 			isa = PBXGroup;
 			children = (
-				E370AC1626A98B5600E4F159 /* aobj.cpp */,
 				E370AC1B26A98B5700E4F159 /* aobj.h */,
-				E370AC1A26A98B5700E4F159 /* atgaexporter.cpp */,
+				E370AC1626A98B5600E4F159 /* aobj.cpp */,
 				E370AC1526A98B5600E4F159 /* atgaexporter.h */,
+				E370AC1A26A98B5700E4F159 /* atgaexporter.cpp */,
 				E370AC1826A98B5600E4F159 /* aganesha.h */,
 				E370AC1926A98B5600E4F159 /* aganesha.cpp */,
 				E370AC1726A98B5600E4F159 /* ganeshatypes.h */,
 				E370AC1F26A98C9C00E4F159 /* ganesha.h */,
-				E370AC0E26A98B2100E4F159 /* main.cpp */,
 			);
 			path = ganesha;
 			sourceTree = "<group>";

@@ -37,19 +37,19 @@ void AGanesha::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
         y0 > frameHeight) {
         return;
     }
-    
+
     bool steep = false;
     if (std::abs(x0 - x1) < std::abs(y0 - y1)) {
         std::swap(x0, y0);
         std::swap(x1, y1);
         steep = true;
     }
-    
+
     if (x0 > x1) {
         std::swap(x0, x1);
         std::swap(y0, y1);
     }
-    
+
     int32_t dx = x1 - x0;
     int32_t dy = y1 - y0;
     int32_t derror2 = std::abs(dy) * 2;
@@ -62,7 +62,7 @@ void AGanesha::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
             paintPixel(drawColor, x, y);
         }
         error2 += derror2;
-        
+
         if (error2 > dx) {
             y += (y1 > y0 ? 1 : -1);
             error2 -= dx * 2;
