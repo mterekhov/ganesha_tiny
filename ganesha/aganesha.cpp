@@ -71,6 +71,10 @@ void AGanesha::drawLine(int32_t x0, int32_t y0, int32_t x1, int32_t y1) {
 }
 
 void AGanesha::paintPixel(const uint8_t *color, const uint32_t pixelXCoord, const uint32_t pixelYCoord) {
+    if (pixelXCoord >= frameWidth ||
+        pixelYCoord >= frameHeight) {
+        return;
+    }
     uint32_t pixelIndex = colorsPerPixel * (pixelYCoord * frameWidth + pixelXCoord);
     for (uint32_t i = 0; i < colorsPerPixel; i++) {
         backFrameBufferData[pixelIndex + i] = color[i];
@@ -81,6 +85,7 @@ void AGanesha::swapBuffers() {
     memcpy(onScreenFrameBufferData, backFrameBufferData, bufferSize());
     
     ATGAExporter tgaSaver;
+    tgaSaver.flipOver(onScreenFrameBufferData, frameWidth, frameHeight);
     tgaSaver.exportData(tgaFullFilePath, onScreenFrameBufferData, frameWidth, frameHeight);
 }
 

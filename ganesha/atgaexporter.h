@@ -30,6 +30,16 @@ public:
      */
     bool exportData(const std::string& fileName, unsigned char *data, const int width, const int height);
 
+    /**
+     rotates the image so the bottom becomes the top and the top becomes the bottom
+
+     @param data data to convert, result of convertion places in this array
+     @param width width of image
+     @param height height of  image
+     @return true in case of success, or false in case of error
+     */
+    bool flipOver(unsigned char* data, int width, int height);
+
 private:
     /**
      Convert rgb component sequence into bgr for tga format
@@ -41,15 +51,6 @@ private:
      */
 	bool RGB2BGR(unsigned char* data, int width, int height);
     
-    /**
-     rotates the image so the bottom becomes the top and the top becomes the bottom
-
-     @param data data to convert, result of convertion places in this array
-     @param width width of image
-     @param height height of  image
-     @return true in case of success, or false in case of error
-     */
-	bool flipOver(unsigned char* data, int width, int height);
 };
 
 //=============================================================================
