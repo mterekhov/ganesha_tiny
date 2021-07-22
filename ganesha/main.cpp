@@ -1,7 +1,12 @@
-#include <iostream>
+//
+//  main.cpp
+//  ganesha
+//
+//  Created by Mihail Terekhov on 22.07.2021.
+//
 
-#include "aganesha.h"
-#include "aobj.h"
+#include <iostream>
+#include "ganesha.h"
 
 int main(int argc, const char * argv[]) {
     uint32_t width = 1024;
@@ -10,7 +15,7 @@ int main(int argc, const char * argv[]) {
     spcGanesha::AGanesha ganeshaEngine(width, height, 3);
     ganeshaEngine.tgaFullFilePath = "/Users/ctteremalex/Pictures/shiva.tga";
 
-    spcGanesha::AObj model("/Users/ctteremalex/Development/shiva/model.obj");
+    spcGanesha::AObj model("/Users/ctteremalex/Development/ganesha/model.obj");
     spcGanesha::TVertexesIndexesList facesList = model.faces();
     std::vector<spcGanesha::TVector> vertexesList = model.vertexes();
     

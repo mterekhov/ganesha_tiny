@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3A7BCA425D176E900D4AD80 /* aobj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3A7BCA225D176E900D4AD80 /* aobj.cpp */; };
-		E3E1E12325D1421700672F14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E12225D1421700672F14 /* main.cpp */; };
-		E3E1E12C25D1426300672F14 /* atgaexporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E12A25D1426300672F14 /* atgaexporter.cpp */; };
-		E3E1E13025D142BB00672F14 /* ashiva.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E1E12E25D142BB00672F14 /* ashiva.cpp */; };
+		E370AC0F26A98B2100E4F159 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E370AC0E26A98B2100E4F159 /* main.cpp */; };
+		E370AC1C26A98B5700E4F159 /* aobj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E370AC1626A98B5600E4F159 /* aobj.cpp */; };
+		E370AC1D26A98B5700E4F159 /* aganesha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E370AC1926A98B5600E4F159 /* aganesha.cpp */; };
+		E370AC1E26A98B5700E4F159 /* atgaexporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E370AC1A26A98B5700E4F159 /* atgaexporter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E3E1E11D25D1421600672F14 /* CopyFiles */ = {
+		E370AC0926A98B2100E4F159 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,19 +26,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E3A7BC9F25D15C2300D4AD80 /* ganeshatypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ganeshatypes.h; sourceTree = "<group>"; };
-		E3A7BCA225D176E900D4AD80 /* aobj.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = aobj.cpp; sourceTree = "<group>"; };
-		E3A7BCA325D176E900D4AD80 /* aobj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aobj.h; sourceTree = "<group>"; };
-		E3E1E11F25D1421700672F14 /* shiva */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shiva; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3E1E12225D1421700672F14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		E3E1E12A25D1426300672F14 /* atgaexporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = atgaexporter.cpp; sourceTree = "<group>"; };
-		E3E1E12B25D1426300672F14 /* atgaexporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atgaexporter.h; sourceTree = "<group>"; };
-		E3E1E12E25D142BB00672F14 /* ashiva.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ashiva.cpp; sourceTree = "<group>"; };
-		E3E1E12F25D142BB00672F14 /* aganesha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aganesha.h; sourceTree = "<group>"; };
+		E370AC0B26A98B2100E4F159 /* ganesha */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ganesha; sourceTree = BUILT_PRODUCTS_DIR; };
+		E370AC0E26A98B2100E4F159 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E370AC1526A98B5600E4F159 /* atgaexporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atgaexporter.h; sourceTree = "<group>"; };
+		E370AC1626A98B5600E4F159 /* aobj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aobj.cpp; sourceTree = "<group>"; };
+		E370AC1726A98B5600E4F159 /* ganeshatypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ganeshatypes.h; sourceTree = "<group>"; };
+		E370AC1826A98B5600E4F159 /* aganesha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aganesha.h; sourceTree = "<group>"; };
+		E370AC1926A98B5600E4F159 /* aganesha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aganesha.cpp; sourceTree = "<group>"; };
+		E370AC1A26A98B5700E4F159 /* atgaexporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = atgaexporter.cpp; sourceTree = "<group>"; };
+		E370AC1B26A98B5700E4F159 /* aobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aobj.h; sourceTree = "<group>"; };
+		E370AC1F26A98C9C00E4F159 /* ganesha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ganesha.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E3E1E11C25D1421600672F14 /* Frameworks */ = {
+		E370AC0826A98B2100E4F159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,71 +49,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E3E1E11625D1421600672F14 = {
+		E370AC0226A98B2100E4F159 = {
 			isa = PBXGroup;
 			children = (
-				E3E1E12125D1421700672F14 /* shiva */,
-				E3E1E12025D1421700672F14 /* Products */,
+				E370AC0D26A98B2100E4F159 /* ganesha */,
+				E370AC0C26A98B2100E4F159 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E3E1E12025D1421700672F14 /* Products */ = {
+		E370AC0C26A98B2100E4F159 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3E1E11F25D1421700672F14 /* shiva */,
+				E370AC0B26A98B2100E4F159 /* ganesha */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E3E1E12125D1421700672F14 /* shiva */ = {
+		E370AC0D26A98B2100E4F159 /* ganesha */ = {
 			isa = PBXGroup;
 			children = (
-				E3A7BC9F25D15C2300D4AD80 /* ganeshatypes.h */,
-				E3E1E12F25D142BB00672F14 /* aganesha.h */,
-				E3E1E12E25D142BB00672F14 /* ashiva.cpp */,
-				E3E1E12B25D1426300672F14 /* atgaexporter.h */,
-				E3A7BCA325D176E900D4AD80 /* aobj.h */,
-				E3A7BCA225D176E900D4AD80 /* aobj.cpp */,
-				E3E1E12A25D1426300672F14 /* atgaexporter.cpp */,
-				E3E1E12225D1421700672F14 /* main.cpp */,
+				E370AC1626A98B5600E4F159 /* aobj.cpp */,
+				E370AC1B26A98B5700E4F159 /* aobj.h */,
+				E370AC1A26A98B5700E4F159 /* atgaexporter.cpp */,
+				E370AC1526A98B5600E4F159 /* atgaexporter.h */,
+				E370AC1826A98B5600E4F159 /* aganesha.h */,
+				E370AC1926A98B5600E4F159 /* aganesha.cpp */,
+				E370AC1726A98B5600E4F159 /* ganeshatypes.h */,
+				E370AC1F26A98C9C00E4F159 /* ganesha.h */,
+				E370AC0E26A98B2100E4F159 /* main.cpp */,
 			);
-			path = shiva;
+			path = ganesha;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E3E1E11E25D1421600672F14 /* shiva */ = {
+		E370AC0A26A98B2100E4F159 /* ganesha */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3E1E12625D1421700672F14 /* Build configuration list for PBXNativeTarget "shiva" */;
+			buildConfigurationList = E370AC1226A98B2100E4F159 /* Build configuration list for PBXNativeTarget "ganesha" */;
 			buildPhases = (
-				E3E1E11B25D1421600672F14 /* Sources */,
-				E3E1E11C25D1421600672F14 /* Frameworks */,
-				E3E1E11D25D1421600672F14 /* CopyFiles */,
+				E370AC0726A98B2100E4F159 /* Sources */,
+				E370AC0826A98B2100E4F159 /* Frameworks */,
+				E370AC0926A98B2100E4F159 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = shiva;
-			productName = shiva;
-			productReference = E3E1E11F25D1421700672F14 /* shiva */;
+			name = ganesha;
+			productName = ganesha;
+			productReference = E370AC0B26A98B2100E4F159 /* ganesha */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E3E1E11725D1421600672F14 /* Project object */ = {
+		E370AC0326A98B2100E4F159 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					E3E1E11E25D1421600672F14 = {
-						CreatedOnToolsVersion = 12.3;
+					E370AC0A26A98B2100E4F159 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = E3E1E11A25D1421600672F14 /* Build configuration list for PBXProject "shiva" */;
+			buildConfigurationList = E370AC0626A98B2100E4F159 /* Build configuration list for PBXProject "ganesha" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,32 +122,32 @@
 				en,
 				Base,
 			);
-			mainGroup = E3E1E11625D1421600672F14;
-			productRefGroup = E3E1E12025D1421700672F14 /* Products */;
+			mainGroup = E370AC0226A98B2100E4F159;
+			productRefGroup = E370AC0C26A98B2100E4F159 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3E1E11E25D1421600672F14 /* shiva */,
+				E370AC0A26A98B2100E4F159 /* ganesha */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E3E1E11B25D1421600672F14 /* Sources */ = {
+		E370AC0726A98B2100E4F159 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E1E12325D1421700672F14 /* main.cpp in Sources */,
-				E3A7BCA425D176E900D4AD80 /* aobj.cpp in Sources */,
-				E3E1E12C25D1426300672F14 /* atgaexporter.cpp in Sources */,
-				E3E1E13025D142BB00672F14 /* ashiva.cpp in Sources */,
+				E370AC1D26A98B5700E4F159 /* aganesha.cpp in Sources */,
+				E370AC0F26A98B2100E4F159 /* main.cpp in Sources */,
+				E370AC1C26A98B5700E4F159 /* aobj.cpp in Sources */,
+				E370AC1E26A98B5700E4F159 /* atgaexporter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E3E1E12425D1421700672F14 /* Debug */ = {
+		E370AC1026A98B2100E4F159 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +198,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -204,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		E3E1E12525D1421700672F14 /* Release */ = {
+		E370AC1126A98B2100E4F159 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,14 +251,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		E3E1E12725D1421700672F14 /* Debug */ = {
+		E370AC1326A98B2100E4F159 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		E3E1E12825D1421700672F14 /* Release */ = {
+		E370AC1426A98B2100E4F159 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -279,25 +281,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E3E1E11A25D1421600672F14 /* Build configuration list for PBXProject "shiva" */ = {
+		E370AC0626A98B2100E4F159 /* Build configuration list for PBXProject "ganesha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3E1E12425D1421700672F14 /* Debug */,
-				E3E1E12525D1421700672F14 /* Release */,
+				E370AC1026A98B2100E4F159 /* Debug */,
+				E370AC1126A98B2100E4F159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3E1E12625D1421700672F14 /* Build configuration list for PBXNativeTarget "shiva" */ = {
+		E370AC1226A98B2100E4F159 /* Build configuration list for PBXNativeTarget "ganesha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3E1E12725D1421700672F14 /* Debug */,
-				E3E1E12825D1421700672F14 /* Release */,
+				E370AC1326A98B2100E4F159 /* Debug */,
+				E370AC1426A98B2100E4F159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E3E1E11725D1421600672F14 /* Project object */;
+	rootObject = E370AC0326A98B2100E4F159 /* Project object */;
 }
